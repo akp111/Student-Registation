@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <form method="post" target="#" onsubmit="return validate()">
+        <h1>Student Registration Form</h1>
+        Name<br>
+        <input type="text" name="name"><br>
+        Email<br>
+        <input type="text" name="email"><br>
+        Retype email<br>
+        <input type="text" name="retype_email"><br>
+        Gender<br>
+        <input type="radio" name="sex" value="male" size="10">Male
+        <input type="radio" name="sex" value="Female" size="10">Female
+        <br>
+        Course
+        <br>
+        <select name="Course">
+                <option value="-1" selected>Select..</option>
+                <option value="B.Tech">B.TECH</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+                <option value="BCA">BCA</option>
+            </select>
+            <br>
+        Create a password<br>
+        <input type="password" name="password"><br>
+        Retype password<br>
+        <input type="password" name="retype_password"><br>
+
+        <label>
+            <input type="checkbox" name="terms">By clicking this you agree to your
+            <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a> of University
+        </label>
+
+        <div class="button" id="submit">
+            <input type="submit" class="button" value="Register">
+        </div>
+
+    </form>
+</body>
+
+</html>
